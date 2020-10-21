@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<style>
+   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+   * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   font-family: 'Josefin Sans', sans-serif;
+   }
+   body {
+   background:#dfe6e9;
+   }
+   a{
+   text-decoration: none;
+   color: #919aa3;
+   }
+   .card {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 500px;
+   height: 400px;
+   display: flex;
+   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+   }
+   .card .left {
+   width: 35%;
+   background: linear-gradient(to right, #01a9ac, #01dbdf);
+   padding: 30px 25px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   text-align: center;
+   color: #fff;
+   }
+   .card .left img {
+   border-radius: 5px;
+   margin-bottom: 10px;
+   }
+   .card .left h4 {
+   margin-bottom: 10px;
+   }
+   .card .left p {
+   font-size: 14px;
+   }
+   .card .right {
+   width: 65%;
+   background: #fff;
+   padding: 30px 25px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   }
+   .card .right .info,
+   .card .right .contact {
+   margin-bottom: 50px;
+   }
+   .card .right .info h3,
+   .card .right .contact h3 {
+   margin-bottom: 15px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid #e0e0e0;
+   color: #353c4e;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   }
+   .card .right .info-data,
+   .card .right .contact-data {
+   display: flex;
+   justify-content: space-between;
+   }
+   .card .right .info-data .data,
+   .card .right .contact-data .data {
+   width: 300px
+   }
+   .card .right .info-data .data h4 {
+   color: #353c4e;
+   margin: 5px 0 10px 0px;
+   }
+   .card .right .contact-data .data h4{
+    color: #353c4e;  
+   }
+   .card .right .contact-data .data p ,
+   .card .right .info-data .data p{
+   font-size: 15px;
+   margin-bottom: 10px;
+   color: #919aa3;
+   }
+   .card .social_media ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   .card .social_media ul li {
+   width: 45px;
+   height: 45px;
+   background: linear-gradient(to right, #01a9ac, #01dbdf);
+   margin-right: 10px;
+   border-radius: 5px;
+   text-align: center;
+   line-height: 45px;
+   }
+   .card .social_media ul li a {
+   margin-top: 12px;
+   color: #fff;
+   display: block;
+   font-size: 18px;
+   }
+</style>
+<div class="card">
+   <div class="left">
+      <img src="{{basics.profile_fullpath}}" 
+         alt="Profile-Picture" width="100">
+      <h4>{{basics.name}}</h4>
+      <p>{{basics.label}}</p>
+   </div>
+   <div class="right">
+      <div class="info">
+         <h3>About</h3>
+         <div class="info-data">
+            <div class="data">
+               <p>{{basics.biography}}</p>
+            </div>
+         </div>
+      </div>
+      <div class="contact">
+         <h3>Contact</h3>
+         <div class="contact-data">
+            <div class="data">
+               <h4>Email</h4>
+               <a href="mailto:{{basics.email}}">{{basics.email}}</a>
+            </div>
+            <div class="data" style="padding-left:15px;">
+               <h4>Phone</h4>
+               <p>{{basics.phone}}</p>
+            </div>
+         </div>
+      </div>
+      <div class="social_media">
+         <ul>
+            <li><a href="{{basics.facebook}}"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="{{basics.twitter}}"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="{{basics.instagram}}"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="{{basics.github}}"><i class="fab fa-github"></i></a></li>
+         </ul>
+      </div>
+   </div>
+</div>

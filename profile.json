@@ -1,0 +1,17 @@
+{
+	"basics": {
+		"name": "John Doe",
+		"label": "Web Developer",
+		"profile": "profile.jpg",
+		"phone": "123-456-7890",
+		"email": "johndoe@yahoo.com",
+		"twitter": "https://twitter.com",
+		"instagram": "http://instagram.com",
+		"facebook": "https://www.facebook.com",
+		"github": "http://github.com",
+		"biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis tincidunt urna, ac auctor ipsum sodales ac. Etiam velit lacus, dictum ac finibus in, luctus ut arcu."
+	},
+	"theme": {
+		"name": "themes/simple"
+	}
+}
